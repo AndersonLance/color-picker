@@ -8,7 +8,5 @@ module.exports = {
             }
         }
     },
-    publicPath: process.env.NODE_ENV === 'production'
-        ? '/4D/BTSMIS/SiteAssets/color-picker'
-        : '/'
+    publicPath: '/color-picker/'
 }
