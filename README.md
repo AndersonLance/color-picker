@@ -1,5 +1,7 @@
 # color-picker
 
+App available here: https://andersonlance.github.io/color-picker/#/
+
 ## Project Setup
 ```
 npm install
