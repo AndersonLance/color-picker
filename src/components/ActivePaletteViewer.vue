@@ -542,8 +542,8 @@ h1, h2, h3, h4 {
                 margin-top: 5px;
                 margin-right: 12px;
                 margin-bottom: 12px;
-                height: 70px;
-                width: 70px;
+                height: 80px;
+                width: 80px;
 
                 .scss-var {
                     font-size: .57rem;
