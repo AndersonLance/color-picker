@@ -36,3 +36,9 @@ I've also recently been learning VueJS, and I thought this would be the perfect 
 I ended up reformatting the color palette JSON into a new data structure and naming convention, and started building the app. Over time I have added a few new features, most notably the ability to search by color name, so if you are looking for a palette with blue in it, for example, you can quickly filter the list down. I created a feature that automatically changes the colors of the app as you preview individual palettes so you can quickly see how the colors go together and might look in your app. Finally, where I work we use Tableau a lot, and I was always being asked by our Tableau developers what colors they should use in the various charts and graphs they made. I now just point them to this app, and I added the ability to export any palette directly into a format they can load into Tableau to get them working faster.
 
 Thanks for checking this out, I hope you find it useful!
+
+## Resources & Thanks
+
+[Steve Schoger](https://twitter.com/steveschoger) wrote [Refactoring UI](https://twitter.com/refactoringui) and created all of the color palettes that inspired the creation of this app.
+
+I found this [article](https://blog.logrocket.com/build-deploy-vue-js-app-github-pages/) by [Nwose Lotanna](https://blog.logrocket.com/author/nwoselotanna/) extremely helpful to explain how to deploy this app so it's usuable directly in GitHub via GitHub Pages.
