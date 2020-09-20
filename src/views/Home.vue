@@ -11,6 +11,9 @@
       v-on:setActivePaletteId="setActivePaletteId"
     />
     <div id="mainContent">
+      <div id="sidebarBtn" :style="{'color':activeColor.Primary[0]['primary-1-050']}">
+        <font-awesome-icon icon="ellipsis-v" />
+      </div>
       <ActivePaletteViewer
         :palettes="palettes"
         :activePaletteId="activePaletteId"
@@ -124,6 +127,15 @@ export default {
 
 <style lang="scss" scoped>
 
+#sidebarBtn {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 1.5rem;
+  display: none; // Hidden by default
+  cursor: pointer;
+}
+
 .palette-sidebar {
   height: 100vh;
   width: 250px;
@@ -149,6 +161,21 @@ export default {
 
 #adminBtn a:hover {
   color: $neutral-1-200;
+}
+
+@media only screen and (max-width: 1429px) {
+  
+  .palette-sidebar {
+    display: none; // Hide sidebar on smaller screen sizes
+  }
+
+  #mainContent {
+    margin-left: 0px;
+  }
+
+  #sidebarBtn {
+    display: block;
+  }
 }
 
 </style>
