@@ -452,7 +452,7 @@ h1, h2, h3, h4 {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1140px;
+    max-width: 1140px;
 }
 
 .container.neg-margin-top {
@@ -533,20 +533,21 @@ h1, h2, h3, h4 {
 
         .color-group {
             display: flex;
-            justify-content: space-between;
+            //justify-content: space-between;
             margin-bottom: 10px;
+            flex-wrap: wrap;
 
             .color-hex-pair {
-                font-size: .7rem;
+                font-size: .9rem;
                 text-align: center;
                 margin-top: 5px;
                 margin-right: 12px;
                 margin-bottom: 12px;
-                height: 80px;
-                width: 80px;
+                height: 90px;
+                width: 90px;
 
                 .scss-var {
-                    font-size: .57rem;
+                    font-size: .7rem;
                 }
             }
         }
