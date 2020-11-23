@@ -266,11 +266,11 @@ export default {
             // Generate SCSS code to then copy to clipboard
 
             // Clear var
-            this.ScssCode = '// ' + this.palettes[this.activePaletteId].title + '\n';
+            this.ScssCode = '// ' + this.palettes[this.activePaletteIndex].title + '\n';
 
 
-            const primaryColors = this.palettes[this.activePaletteId].Primary;
-            const supportingColors = this.palettes[this.activePaletteId].Supporting;
+            const primaryColors = this.palettes[this.activePaletteIndex].Primary;
+            const supportingColors = this.palettes[this.activePaletteIndex].Supporting;
             
             // Loop through Primary color(s) in currently active palette, and write them to string
             for (const color of primaryColors) {
@@ -287,9 +287,9 @@ export default {
                 }
             }
 
-            if (this.palettes[this.activePaletteId].Neutral) {
+            if (this.palettes[this.activePaletteIndex].Neutral) {
                 // There is at least one neutral color in this palette
-                const neutralColors = this.palettes[this.activePaletteId].Neutral;
+                const neutralColors = this.palettes[this.activePaletteIndex].Neutral;
 
                 // Loop through Neutral color(s) in currently active palette, and write them to string
                 for (const color of neutralColors) {
@@ -356,8 +356,8 @@ export default {
         },
         generateTableauPrefs() {
             // Generate XML code for Tableau Preferences
-            const primaryColors = this.palettes[this.activePaletteId].Primary;
-            const supportingColors = this.palettes[this.activePaletteId].Supporting;
+            const primaryColors = this.palettes[this.activePaletteIndex].Primary;
+            const supportingColors = this.palettes[this.activePaletteIndex].Supporting;
             const colorTypes = ['regular', 'ordered-sequential'];
 
             // Open XML tags
@@ -382,9 +382,9 @@ export default {
                     this.tableauPrefs += '\t\t</color-palette>\n';
                 }
                 
-                if (this.palettes[this.activePaletteId].Neutral) {
+                if (this.palettes[this.activePaletteIndex].Neutral) {
                     // There is at least one neutral color in this color palette
-                    const neutralColors = this.palettes[this.activePaletteId].Neutral;
+                    const neutralColors = this.palettes[this.activePaletteIndex].Neutral;
 
                     for (const color of neutralColors) {
                         this.tableauPrefs += '\t<color-palette name="Neutral ' + color.id + ' ' + colorType +  '" type="' + colorType + '">\n';
