@@ -27,7 +27,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Build and deploy to GitHub Pages
 
+```
 npm run deploy
+```
 
 ## Project Overview
 
